@@ -7,7 +7,7 @@
   },
   "rewrites": [
     {
-      "source": "/get/(.*)",
+      "source": "/get",
       "destination": "api/server.js"
     }
   ]
