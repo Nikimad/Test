@@ -2,6 +2,8 @@ const App = () => {
     const getData = async () => {
         const res = await fetch("api/server/boards");
         console.log(await res.json());
+        const res1 = await fetch("api/server/boards/1");
+        console.log(await res1.json());
     };
     
     const postData = () => {
