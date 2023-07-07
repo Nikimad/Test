@@ -2,8 +2,10 @@ import jsonServer from "json-server";
 
 export const server = jsonServer.create();
 
-const router = jsonServer.router('db.json')
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
 
+server.use(middlewares);
 server.use(
   jsonServer.rewriter({
     "/api/*": "/$1",
