@@ -1,11 +1,11 @@
 const App = () => {
     const getData = async () => {
-        const res = await fetch("api/boards");
+        const res = await fetch("api/server/boards");
         console.log(await res.json());
     };
     
     const postData = () => {
-        fetch("api/boards", {
+        fetch("api/server/boards", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json; charset=UTF-8",
